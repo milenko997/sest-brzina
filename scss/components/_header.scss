@@ -1,0 +1,229 @@
+.header {
+    background: url(../assets/header.png);
+
+    @include mq($ipad) {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-top {
+    color: $white;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    align-items: center;
+    padding: 10px 0;
+
+    @include mq($tablet) {
+        justify-content: space-around;
+    }
+
+    @include mq($ipad) {
+        flex-direction: column;
+        order: 2;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: $dur $ease;
+        font-size: 14px;
+    }
+}
+
+.header-top-items {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+        @include mq($tablet) {
+            display: none;
+        }
+
+        @include mq($ipad) {
+            display: flex;
+        }
+    }
+
+    @include mq($ipad) {
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+}
+
+.header-top-items-contact {
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+        margin-right: 13px;
+    }
+}
+
+.header-top-items-dropdown {
+    margin-right: 6px;
+}
+
+.header-small-icons {
+    height: 10px;
+    margin-right: 4px;
+}
+
+.header-top-items-drop-down {
+    padding: 2px;
+    border: 2px solid $dark-red;
+}
+
+.header-top-items-social-media {
+    margin-right: 5px;
+    height: 10px;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    img {
+        height: 16px;
+    }
+}
+
+.header-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include mq($tablet) {
+        justify-content: space-around;
+    }
+
+    @include mq($ipad) {
+        padding: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.header-logo {
+    @include mq($ipad) {
+        width: 70px;
+    }
+}
+
+.header-mid-abouth-user {
+    display: flex;
+    margin-bottom: 15px;
+
+    @include mq($ipad) {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+}
+
+.header-mid-abouth-user-data {
+    margin-right: 10px;
+
+    &:nth-child(2) {
+        margin-right: 0;
+    }
+
+    @include mq($ipad) {
+        display: flex;
+        margin-right: 0;
+
+        &:nth-child(1) {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+        &:nth-child(2) {
+            flex-direction: column;
+        }
+    }
+}
+
+.header-mid-abouth-user-image {
+    border: 3px solid $light-red;
+    width: 114px;
+    height: 100%;
+
+    @include mq($ipad) {
+        border-radius: 50%;
+        width: 70px;
+        margin-bottom: 8px;
+    }
+}
+
+.header-mid-abouth-user-data-text {
+    &:nth-child(5) {
+        margin-bottom: 15px;
+    }
+
+    @include mq($ipad) {
+        display: flex;
+        justify-content: flex-end;
+        max-height: 0;
+        overflow: hidden;
+        transition: $dur $ease;
+
+        &:nth-child(5) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.header-mid-abouth-user-data-text.show-nav-dropdown {
+    padding: 4px 0;
+}
+
+.header-mid-abouth-user-data-buttons {
+    display: flex;
+
+    :nth-child(1) {
+        margin-right: 6px;
+    }
+
+    @include mq($ipad) {
+        max-height: 0;
+        overflow: hidden;
+        transition: $dur $ease;
+        justify-content: flex-end;
+    }
+}
+
+.header-mid-data {
+    font-size: 10px;
+    padding: 0;
+    color: $white;
+
+    &:nth-child(1) {
+        margin-right: 4px;
+    }
+
+    &:nth-child(2) {
+        color: $light-red;
+    }
+}
+
+.header-bottom-buttons {
+    @include mq($ipad) {
+        max-height: 0;
+        overflow: hidden;
+        transition: $dur $ease;
+    }
+}

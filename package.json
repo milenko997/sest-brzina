@@ -1,0 +1,23 @@
+{
+  "name": "sest-brzina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/decem.co/sest-brzina.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/decem.co/sest-brzina/issues"
+  },
+  "homepage": "https://gitlab.com/decem.co/sest-brzina#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "node-sass": "^4.14.1"
+  }
+}

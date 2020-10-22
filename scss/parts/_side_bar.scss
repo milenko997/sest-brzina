@@ -1,0 +1,129 @@
+.side_bar {
+    max-width: 220px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.side_bar-title {
+    padding: 10px;
+    display: flex;
+    background: $dark-grey;
+    border-top: 3px solid $red;
+    align-items: center;
+}
+
+.glide__slide-content-circle-small {
+    height: 10px;
+    width: 10px;
+    border: 3px solid $light-red;
+    border-radius: 50%;
+    margin-right: 6px;
+    background: transparent;
+}
+
+.side_bar-title-text {
+    font-size: 13px;
+    color: $white;
+}
+
+.side_bar-categories-links {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 24px;
+}
+
+.side_bar-categories-link {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.dropbtn {
+    display: flex;
+    background-color: transparent;
+    color: $black;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+}
+
+.side_bar-categories-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.categories-dropdown-content {
+    font-size: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: $dur $ease;
+}
+
+.categories-dropdown-content.show {
+    margin-bottom: 8px;
+    max-height: 100vh;
+}
+
+.categories-dropdown-content a {
+    color: $black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.arrow-down {
+    border: 1px solid $black;
+    border-width: 0 1px 1px 0;
+    padding: 2px;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.side_bar-forum-content-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    align-items: center;
+}
+
+.side_bar-forum-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side_bar-forum-big-text {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.side_bar-forum-small-text {
+    display: block;
+    font-size: 10px;
+}
+
+.side_bar-plus-icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.strong-text {
+    cursor: pointer;
+}
+
+.side_bar-forum-content {
+    margin-bottom: 24px;
+}
+
+.side_bar-partners-field {
+    margin-top: 12px;
+    width: 100%;
+    height: 124px;
+    box-shadow: 0px 0px 30px -7px rgba(0,0,0,0.50);
+
+}

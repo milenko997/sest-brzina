@@ -1,0 +1,19 @@
+// Breakpoints
+
+$small-phone: 375;
+$phone: 440;
+$tablet: 991;
+$tablet-l: 1200;
+$lap-small: 1250;
+$lap-large: 1400;
+$ipad: 768;
+
+// Transition
+
+$dur: 350ms;
+$ease: ease-in-out;
+
+// Gradient
+
+$gradient-red-dark: linear-gradient(0deg, $dark-red-2 50%, $red 50%);
+$gradient-gold: linear-gradient(0deg, $brown 50%, $dark-yellow 50%);

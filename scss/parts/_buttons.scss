@@ -1,0 +1,77 @@
+.header-small-buttons {
+    background-color: $dark-red-3;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+
+    &:hover {
+        background: $dark-red-2;
+    }
+}
+
+.header-small-buttons-text {
+    color: $white;
+    font-size: 8px;
+}
+
+.header-big-buttons {
+    color: $white;
+    background: $gradient-gold;
+    border-top: 2px solid $light-yellow;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-size: 10px;
+    padding: 4px 8px;
+    margin-right: 14px;
+
+    &:hover {
+        background: $brown;
+        border-top: 2px solid $brown;
+    }
+
+    &:nth-child(2) {
+        background: $gradient-red-dark;
+        border-top: 2px solid $light-red;
+        margin-right: 0;
+
+        &:hover {
+            background: $dark-red-2;
+            border-top: 2px solid $dark-red-2;
+        }
+    }
+}
+
+.read-more-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+
+    button {
+        border: none;
+        color: $white;
+        background-color: $red;
+        font-size: 10px;
+        padding: 6px;
+
+        &:hover {
+            background-color: $light-red;
+        }
+    }
+}
+
+.container-body-card-btn {
+    background: $gradient-red-dark;
+    border-top: 2px solid $light-red;
+    padding: 2px 14px;
+
+    &:hover {
+        background: $dark-red-2;
+    }
+}
+
+.container-btn-text {
+    color: $white;
+    font-size: 10px;
+}

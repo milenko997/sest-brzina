@@ -1,0 +1,28 @@
+.container-body {
+    max-width: 960px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mq($ipad) {
+        margin-top: 81px;
+    }
+}
+
+.container-body-content {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.container-body-content-main {
+    width: 100%;
+}
+
+.container-main_content-title {
+    display: flex;
+    background: $dark-grey;
+    padding: 10px;
+    border-top: 3px solid $red;
+    align-items: center;
+    margin-bottom: 8px;
+}
