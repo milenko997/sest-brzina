@@ -41,6 +41,20 @@
             border-top: 2px solid $dark-red-2;
         }
     }
+
+    @include mq($header-buttons-breakpoint) {
+        &:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include mq($ipad) {
+        margin-right: 0;
+
+        &:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .read-more-btn {

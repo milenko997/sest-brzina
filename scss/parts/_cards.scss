@@ -5,6 +5,10 @@
 .container-body-cards {
     display: flex;
     justify-content: space-between;
+
+    @include mq($custom-breakpoint) {
+        flex-wrap: wrap;
+    }
 }
 
 .container-body-card {
@@ -14,6 +18,14 @@
     max-width: 130px;
     padding: 10px;
     box-shadow: 0px 0px 30px -7px rgba(0,0,0,0.50);
+
+    @include mq($custom-breakpoint) {
+        max-width: 45%;
+
+        &:nth-child(-n+2) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .container-body-card-image {
@@ -28,6 +40,10 @@
     font-weight: bold;
     letter-spacing: 1px;
     text-align: justify;
+
+    @include mq($custom-breakpoint) {
+        text-align: center;
+    }
 }
 
 .container-body-articles-text {
@@ -48,6 +64,12 @@
     align-items: center;
     padding: 10px 0 10px 10px;
     box-shadow: 0px 0px 30px -7px rgba(0,0,0,0.50);
+
+    @include mq($custom-breakpoint) {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .container-body-cards-wrapper-images {
@@ -56,6 +78,12 @@
     justify-content: space-between;
     height: 100%;
     margin-right: 10px;
+
+    @include mq($custom-breakpoint) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .container-body-small-image {
@@ -63,6 +91,15 @@
 
     &:nth-last-child(1) {
         margin-bottom: 0;
+    }
+
+    @include mq($custom-breakpoint) {
+        margin-right: 9px;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -72,6 +109,16 @@
     height: 100%;
     border: 1px solid $black;
     padding: 0 10px;
+
+    @include mq($custom-breakpoint) {
+        padding: 20px 10px;
+    }
+
+    img {
+        @include mq($custom-breakpoint) {
+            width: 100%;
+        }
+    }
 }
 
 .container-body-side-text {

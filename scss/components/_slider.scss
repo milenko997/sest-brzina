@@ -15,6 +15,18 @@
     @include mq($ipad) {
         background-size: 768px;
     }
+
+    @include mq($custom-breakpoint) {
+        background-size: 591px;
+    }
+
+    @include mq($phone) {
+        background-size: cover;
+    }
+
+    @include mq($small-phone) {
+        background-size: cover;
+    }
 }
 
 .glide__track, .glide__slides {
@@ -28,12 +40,21 @@
 .glide__slide-content {
     padding: 30px 32px;
     display: flex;
+
+    @include mq($custom-breakpoint) {
+        padding: 20px 20px;
+    }
 }
 
 .glide__slide-content-text {
     margin-left: 55px;
-    margin-right: 16px;
     line-height: 24px;
+    margin-right: 16px;
+
+    @include mq($custom-breakpoint) {
+        margin-left: 40px;
+        line-height: 20px;
+    }
 }
 
 .glide__slide-content-big-text {

@@ -54,6 +54,7 @@
 
         @include mq($ipad) {
             display: flex;
+            padding: 0 8px;
         }
     }
 
@@ -115,6 +116,17 @@
         padding: 10px;
         justify-content: space-between;
         align-items: flex-start;
+    }
+}
+
+.header-mid-items {
+    @include mq($ipad) {
+        width: 33%;
+
+        &:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
@@ -185,6 +197,11 @@
             margin-bottom: 0;
         }
     }
+
+    @include mq($header-text-breakpoint) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 .header-mid-abouth-user-data-text.show-nav-dropdown {
@@ -212,7 +229,7 @@
     color: $white;
 
     &:nth-child(1) {
-        margin-right: 4px;
+        margin-right: 2px;
     }
 
     &:nth-child(2) {
@@ -225,5 +242,11 @@
         max-height: 0;
         overflow: hidden;
         transition: $dur $ease;
+    }
+
+    @include mq($ipad) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 }

@@ -2,6 +2,21 @@
     max-width: 220px;
     width: 100%;
     margin-right: 50px;
+    display: flex;
+
+    @include mq($ipad) {
+        position: absolute;
+        max-width: unset;
+    }
+}
+
+.side_bar-content {
+    @include mq($ipad) {
+        max-width: 0;
+        overflow: hidden;
+        transition: .7s;
+        background: $white;
+    }
 }
 
 .side_bar-title {
@@ -93,6 +108,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mq($ipad) {
+        margin: 0 10px;
+    }
 }
 
 .side_bar-forum-big-text {
@@ -126,4 +145,31 @@
     height: 124px;
     box-shadow: 0px 0px 30px -7px rgba(0,0,0,0.50);
 
+}
+
+.side_bar-show {
+    max-width: 0;
+    overflow: hidden;
+
+    @include mq($ipad) {
+        max-width: 100vh;
+        transition: $dur $ease;
+        margin-top: 200px;
+    }
+}
+
+.side_bar-show-padding {
+    border: 2px solid $dark-grey;
+    padding: 8px 4px;
+    background: $white;
+}
+
+.show-side-bar-icon {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid $dark-grey;
+    border-bottom: 10px solid transparent;
+    transition: 0.5s;
 }

@@ -7,11 +7,26 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    @include mq($custom-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
+
+    @include mq($custom-breakpoint) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-content {
+    @include mq($custom-breakpoint) {
+        margin-bottom: 20px;
+    }
 }
 
 .footer-content-title-wrapper {
@@ -44,8 +59,17 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
 
-    div {
-        margin-right: 20px;
+.footer-bottom-image {
+    // margin-right: 20px;
+
+    @include mq ($ipad) {
+        width: 20%;
+
+        img {
+            width: 100%;
+            object-fit: scale-down;
+        }
     }
 }
